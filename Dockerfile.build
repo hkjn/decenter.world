@@ -1,0 +1,17 @@
+FROM {{ARG_FROM}}
+
+ENV GOOS=linux \
+    CGO_ENABLED=0
+WORKDIR /home/go/src/hkjn.me/decenter.world
+
+USER root
+RUN apk add --no-cache musl-dev
+USER go
+
+COPY ["server.go", "./"]
+
+RUN sh -c "GOARCH=amd64 go build -o ~/bin/decenter_world_x86_64 ./"
+WORKDIR /home/go/bin
+CMD echo "Binaries available in $(pwd): $(ls decenter_world_*)"
+
+
