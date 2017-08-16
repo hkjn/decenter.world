@@ -11,6 +11,7 @@ Description=decenter.world server
 After=network-online.target
 
 [Service]
+Environment=PATH=/usr/bin/:/opt/bin:/bin
 Environment=DECENTER_WORLD_ADDR=:80
 ExecStart=/usr/bin/bash -c "decenter_world"
 Restart=always
