@@ -4,3 +4,4 @@ git pull
 sudo install decenter_world_$(uname -m) /opt/bin/decenter_world
 sudo install decenter_redirector_$(uname -m) /opt/bin/decenter_redirector
 echo "Redeployed the decenter.world binaries."
+sudo systemctl restart decenter decenter_redirector
