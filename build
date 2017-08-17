@@ -4,6 +4,8 @@ set -euo pipefail
 
 declare BASE_IMAGE="hkjn/golang:$(uname -m)-tip"
 declare BUILD_DIR="$(mktemp -d)"
+declare BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd ${BASE}
 
 echo "Building in $BASE_IMAGE.."
 sed "s|{{ARG_FROM}}|${BASE_IMAGE}|g" Dockerfile.build > $BUILD_DIR/Dockerfile
