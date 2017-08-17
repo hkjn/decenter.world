@@ -1,11 +1,3 @@
-#
-# This is a systemd service for decenter.world, which should be copied
-# to /etc/systemd/system/ to run the cities server under systemd.
-#
-# After that, we can use systemctl commands like
-# "systemctl status decenter" and "systemctl start decenter" to interact
-# with systemd.
-#
 [Unit]
 Description=decenter.world server
 After=network-online.target
