@@ -1,0 +1,6 @@
+set -euo pipefail
+git pull
+./build
+sudo install decenter_world_$(uname -m) /opt/bin/decenter_world
+sudo install decenter_redirector_$(uname -m) /opt/bin/decenter_redirector
+echo "Redeployed the decenter.world binaries."
