@@ -1,0 +1,20 @@
+#
+# This is a systemd service decenter_redirector, which should be copied
+# to /etc/systemd/system/ to run the cities server under systemd.
+#
+# After that, we can use systemctl commands like
+# "systemctl status decenter_redirector" and
+# "systemctl start decenter_redirector" to interact with systemd.
+#
+[Unit]
+Description=decenter.world redirector server
+After=network-online.target
+
+[Service]
+Environment=PATH=/usr/bin/:/opt/bin:/bin
+ExecStart=/usr/bin/bash -c "decenter_redirector"
+Restart=always
+
+[Install]
+WantedBy=network-online.target
+
