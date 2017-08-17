@@ -7,7 +7,7 @@ declare BUILD_DIR="$(mktemp -d)"
 
 echo "Building in $BASE_IMAGE.."
 sed "s|{{ARG_FROM}}|${BASE_IMAGE}|g" Dockerfile.build > $BUILD_DIR/Dockerfile
-cp -r *.go $BUILD_DIR
+cp -r *.go redirector $BUILD_DIR
 
 docker build -t decenter-build $BUILD_DIR
 docker run --name decenter-build decenter-build

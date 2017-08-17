@@ -9,9 +9,11 @@ RUN apk add --no-cache musl-dev
 USER go
 
 COPY ["server.go", "./"]
+COPY ["redirector/", "./redirector/"]
 
-RUN sh -c "GOARCH=amd64 go build -o ~/bin/decenter_world_x86_64 ./"
+RUN sh -c "GOARCH=amd64 go build -o ~/bin/decenter_world_x86_64 ./" && \
+    sh -c "GOARCH=amd64 go build -o ~/bin/decenter_redirector_x86_64 ./redirector/"
 WORKDIR /home/go/bin
-CMD echo "Binaries available in $(pwd): $(ls decenter_world_*)"
+CMD echo "Binaries available in $(pwd): $(ls decenter_*)"
 
 
