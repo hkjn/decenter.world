@@ -15,5 +15,13 @@ func main() {
 	if addr == "" {
 		addr = ":8080"
 	}
-	log.Fatal(http.ListenAndServe(addr, nil))
+	if addr == ":443" {
+		log.Println("Serving TLS..")
+		certFile := "/etc/letsencrypt/live/decenter.world/fullchain.pem"
+		keyFile := "/etc/letsencrypt/live/decenter.world/privkey.pem"
+		log.Fatal(http.ListenAndServeTLS(addr, certFile, keyFile, nil))
+	} else {
+		log.Printf("Serving plaintext HTTP on %s..\n", addr)
+		log.Fatal(http.ListenAndServe(addr, nil))
+	}
 }
