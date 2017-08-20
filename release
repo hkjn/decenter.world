@@ -9,8 +9,8 @@ declare VERSION="$(cat VERSION)"
 declare COMMIT=$(git log -1 --pretty=format:"%h")
 declare COMMIT_MSG=$(git log --format=%B -n 1)
 declare GITHUB_TOKEN=${GITHUB_TOKEN:-"$(cat /etc/secrets/github/release_token)"}
-declare GITHUB_API_URL="https://api.github.com/repos/hkjn/hkjninfra/releases"
-declare LINK_URL="https://github.com/hkjn/hkjninfra/releases/tag"
+declare GITHUB_API_URL="https://api.github.com/repos/hkjn/decenter.world/releases"
+declare LINK_URL="https://github.com/hkjn/decenter.world/releases/tag"
 
 source "logging.sh"
 source "slack.sh"
