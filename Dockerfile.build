@@ -10,6 +10,7 @@ USER go
 
 COPY ["server.go", "./"]
 COPY ["redirector/", "./redirector/"]
+COPY ["vendor/", "./vendor/"]
 
 RUN sh -c "GOARCH=amd64 go build -o ~/bin/decenter_world_x86_64 ./" && \
     sh -c "GOARCH=amd64 go build -o ~/bin/decenter_redirector_x86_64 ./redirector/"

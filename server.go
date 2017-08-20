@@ -1,10 +1,13 @@
 package main
 
 import (
+	"crypto/tls"
 	"fmt"
 	"log"
 	"net/http"
 	"os"
+
+	"golang.org/x/crypto/acme/autocert"
 )
 
 func main() {
@@ -15,13 +18,20 @@ func main() {
 	if addr == "" {
 		addr = ":8080"
 	}
+	s := &http.Server{
+		Addr: addr,
+	}
 	if addr == ":443" {
 		fmt.Println("Serving TLS..")
-		certFile := "/etc/letsencrypt/live/decenter.world/fullchain.pem"
-		keyFile := "/etc/letsencrypt/live/decenter.world/privkey.pem"
-		log.Fatal(http.ListenAndServeTLS(addr, certFile, keyFile, nil))
+		m := autocert.Manager{
+			Prompt:     autocert.AcceptTOS,
+			Cache:      autocert.DirCache("cache"),
+			HostPolicy: autocert.HostWhitelist("cities.hkjn.me"),
+		}
+		s.TLSConfig = &tls.Config{GetCertificate: m.GetCertificate}
+		log.Fatal(s.ListenAndServeTLS("", ""))
 	} else {
 		fmt.Printf("Serving plaintext HTTP on %s..\n", addr)
-		log.Fatal(http.ListenAndServe(addr, nil))
+		log.Fatal(s.ListenAndServe())
 	}
 }
