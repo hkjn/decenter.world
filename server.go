@@ -26,7 +26,7 @@ func main() {
 		m := autocert.Manager{
 			Prompt:     autocert.AcceptTOS,
 			Cache:      autocert.DirCache("cache"),
-			HostPolicy: autocert.HostWhitelist("cities.hkjn.me"),
+			HostPolicy: autocert.HostWhitelist("decenter.world"),
 		}
 		s.TLSConfig = &tls.Config{GetCertificate: m.GetCertificate}
 		log.Fatal(s.ListenAndServeTLS("", ""))
