@@ -14,6 +14,6 @@ cp -r *.go redirector $BUILD_DIR
 docker build -t decenter-build $BUILD_DIR
 docker run --name decenter-build decenter-build
 rm -rf bin/
-docker cp decenter-build:/home/go/bin/ $(pwd)
+docker cp decenter-build:/home/go/bin/ .
 docker rm decenter-build
 mv -v bin/* .
