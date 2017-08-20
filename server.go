@@ -25,7 +25,7 @@ func main() {
 		fmt.Println("Serving TLS..")
 		m := autocert.Manager{
 			Prompt:     autocert.AcceptTOS,
-			Cache:      autocert.DirCache("cache"),
+			Cache:      autocert.DirCache("/etc/secrets/acme/"),
 			HostPolicy: autocert.HostWhitelist("decenter.world"),
 		}
 		s.TLSConfig = &tls.Config{GetCertificate: m.GetCertificate}
