@@ -10,9 +10,22 @@ import (
 	"golang.org/x/crypto/acme/autocert"
 )
 
+const Page = `<html>
+<body>
+  <h1>decenter</h1>
+  <i>Transitive verb</i>
+  <blockquote>
+  to cause to lose or shift from an established center or focus
+  </blockquote>
+
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IrSn3zx2GbM?showinfo=0&amp;start=10" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
+`
+
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, `<html><body><p>Hello! Not much here, so for now you should check out this YouTube video: <a href="https://www.youtube.com/watch?v=IrSn3zx2GbM">link</a></body>`)
+		fmt.Fprintf(w, Page)
 	})
 	addr := os.Getenv("DECENTER_WORLD_ADDR")
 	if addr == "" {
