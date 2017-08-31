@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-declare BASE_IMAGE="hkjn/golang:$(uname -m)-tip"
+declare BASE_IMAGE="hkjn/workspace:$(uname -m)-1.3.3"
 declare BUILD_DIR="$(mktemp -d)"
 declare BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd ${BASE}
@@ -12,8 +12,9 @@ sed "s|{{ARG_FROM}}|${BASE_IMAGE}|g" Dockerfile.build > $BUILD_DIR/Dockerfile
 cp -r *.go redirector vendor $BUILD_DIR
 
 docker build -t decenter-build $BUILD_DIR
-docker run --name decenter-build decenter-build
+docker run --name dc-build decenter-build
 rm -rf bin/
-docker cp decenter-build:/home/go/bin/ .
-docker rm decenter-build
-mv -v bin/* .
+docker cp dc-build:/home/go/bin/ .
+docker rm dc-build
+mv -v bin/decenter_* .
+docker rmi decenter-build
