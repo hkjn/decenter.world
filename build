@@ -18,3 +18,4 @@ docker cp dc-build:/home/go/bin/ .
 docker rm dc-build
 mv -v bin/decenter_* .
 docker rmi decenter-build
+rm -rf bin/
