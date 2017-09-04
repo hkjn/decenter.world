@@ -18,7 +18,7 @@ const Page = `<html>
   to cause to lose or shift from an established center or focus
   </blockquote>
 
-  <iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/IrSn3zx2GbM?showinfo=0&amp;start=1m0s" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/IrSn3zx2GbM?showinfo=0&amp;start=60" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
 `
