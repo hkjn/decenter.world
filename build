@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-declare BASE_IMAGE="hkjn/workspace:$(uname -m)-1.3.3"
+declare BASE_IMAGE="hkjn/workspace:$(uname -m)-1.3.6"
 declare BUILD_DIR="$(mktemp -d)"
 declare BASE="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd ${BASE}
