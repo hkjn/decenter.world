@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
-
+#
+# Build binaries.
+#
 set -euo pipefail
 
 declare BASE_IMAGE="hkjn/workspace:$(uname -m)-1.3.6"
@@ -16,6 +17,6 @@ docker run --name dc-build decenter-build
 rm -rf bin/
 docker cp dc-build:/home/go/bin/ .
 docker rm dc-build
-mv -v bin/decenter_* .
+mv -v bin/decenter_* bin/SHA512SUMS .
 docker rmi decenter-build
 rm -rf bin/
