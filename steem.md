@@ -1,5 +1,11 @@
 # Steem concerns
 
+## Extrinsic motivation
+
+When someone shares content with us, we'd like them to do that
+because they care about the content, not because they're expecting
+a payout. Extrinsic explicit incentivization supresses authentic motives.
+
 ## Value of posts should be few cents for almost all users
 
 Actual value of facebook users are on order of dozens of dollars / year,
