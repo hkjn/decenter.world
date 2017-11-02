@@ -1,5 +1,23 @@
 # Steem concerns
 
+- Q1: How decentralized is the governance of Steem blockchain? If
+  something happened to Steemit Inc, would the network continue
+  just the same? How many external developers are there? If
+  there was a change which Steemit Inc strongly opposed, but the
+  community had consensus was a good idea, would it be deployed?
+- Q2: How many full nodes are there? I.e. how many individual computers
+  would need to be subverted before existing data on the Steem blockchain
+  couldn't be accessed?
+- Q3: How many witnesses are there? I.e. how many individual computers / people
+  would need to be attacked before new blocks no longer could be created?
+
+## Centralized
+
+The governance of the system is very important to make sure that it's
+not controlled by a single company or group of people. It's not clear
+how many independent developers are working on Steem, or whether witnesses
+actually would reject consensus changes proposed by Steemit Inc.
+
 ## Extrinsic motivation
 
 When someone shares content with us, we'd like them to do that
