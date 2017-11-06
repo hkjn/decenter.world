@@ -11,6 +11,19 @@
 - Q3: How many witnesses are there? I.e. how many individual computers / people
   would need to be attacked before new blocks no longer could be created?
 
+## Consensus
+
+How does DPoS solve nothing-at-stake problems?
+
+I.e, if an attacker ever has sufficient (50%+?) stake in the system
+at any block, couldn't they vote in their own witnesses at that point,
+and so a newly starting node would believe their false history from
+that point onward (even if they had lower stake later in the "true"
+chain)? In consensus research, it seems that the security properties
+of PoS schemes are known to be weaker than PoW systems, with common
+"fixes" such as having known third parties signing blocks or checkpoints
+baked into source code much less ideal.
+
 ## Centralized
 
 The governance of the system is very important to make sure that it's
