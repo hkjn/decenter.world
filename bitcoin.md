@@ -16,9 +16,9 @@ come to have rather wide-ranging impact on the world.
 Although Bitcoin exists to solve problems for people, and it is the
 beliefs of people that gives bitcoin value, it is still fundamentally
 a system of software. This article will for this reason try to explain
-what the Bitcoin software actually <strong>is</strong>, to explain
-why many of us find it so interesting, and to make it easier to make good
-decisions about how to interact with Bitcoin or how to change the system.
+what the Bitcoin software actually <strong>is</strong>, why many of us
+find it so interesting, and to help make good
+decisions about how to interact with or attempt to modify Bitcoin.
 I will try to avoid making the explanation more complex than necessary,
 but I will need to introduce some concepts like public key cryptography
 and hashing.
