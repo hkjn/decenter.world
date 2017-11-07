@@ -2,23 +2,27 @@
 
 On 2008-11-01, an email was sent by Satoshi Nakamoto introducing
 Bitcoin: A Peer-to-Peer Electronic Cash System [1]. This was followed
-on 2009-01-08 by the release of the Bitcoin v0.1 software. When
-running this software, the computer running it becomes a Bitcoin node.
+on 2009-01-08 by the release of the Bitcoin v0.1 software [2]. When
+this software is active, the computer running it becomes a
+<strong>Bitcoin node</strong>.
 Such nodes join other nodes and form the Bitcoin network, which has
-its own native currency called the lower-case bitcoin. There's only
-ever going to be 21 million bitcoin, which started having value
-because people believed them to have value, and the Bitcoin system
-may have rather wide-ranging impact on the world.
+its own native currency called the lower-case <strong>bitcoin</strong>.
+There's only ever going to be 21 million bitcoin, which have value
+because people believe that they have value. Bitcoin represents a new
+kind of system, and might come to have rather wide-ranging impact on
+the world.
 
-Although beliefs of people is what creates the value in Bitcoin, and
+Although it is the beliefs of people that gives bitcoins value, and
 the system exists to solve problems that people have, since the
-actual system fundamentally is software, it is important to understand
-what it actually is to make good decisions about it.
+actual running system fundamentally is made of software, it is important
+to understand what it actually <strong>is</strong> in order to understand
+why some of us find it so interesting, and in order to make good
+decisions about it.
 
 So in this article, I will describe the Bitcoin system from a software
 perspective. I will try to avoid making the explanation too complex,
-but some concepts like public key cryptography and hashing are necessary
-components.
+but it is necessary to understand a little bit about some concepts like
+public key cryptography and hashing.
 
 The Bitcoin software is a program written in the C++ programming
 language, which when running turns the computer it's running on
@@ -107,11 +111,7 @@ money where the Bitcoin blockchain itself is not directly suitable for
 these reasons, so we need to keep building more systems to solve those
 problems.
 
-[1] https://bitcoin.org/bitcoin.pdf
-[2] http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html
+## Sources
 
-
-
-
-
-
+1. https://bitcoin.org/bitcoin.pdf
+2. http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html
