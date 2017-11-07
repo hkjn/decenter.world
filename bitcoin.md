@@ -15,12 +15,13 @@ come to have rather wide-ranging impact on the world.
 
 Although Bitcoin exists to solve problems for people, and it is the
 beliefs of people that gives bitcoin value, it is still fundamentally
-a system of software. Given this, it is important
-to understand what Bitcoin actually <strong>is</strong> in order to understand
-why many of us find it so interesting, and to be able to make good decisions
-about how to interact with it or how to modify it. I will try to avoid making
-the explanation more complex than necessary,
-but it will help to understand some concepts like public key cryptography and hashing.
+a system of software. This article will for this reason try to explain the
+what the Bitcoin software actually <strong>is</strong>, to explain
+why many of us find it so interesting, and to make it easier to make good
+decisions about how to interact with Bitcoin or how to change the system.
+I will try to avoid making the explanation more complex than necessary,
+but I will need to introduce some concepts like public key cryptography
+and hashing.
 
 The Bitcoin software is a program written in the C++ programming
 language, which if you run it makes your computer a Bitcoin node.
