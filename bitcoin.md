@@ -117,8 +117,3 @@ private keys. There are many kinds of things we might want from digital
 money where the Bitcoin blockchain itself is not directly suitable for
 these reasons, so we need to keep building more systems to solve those
 problems.
-
-## Sources
-
-1. https://bitcoin.org/bitcoin.pdf
-2. 
