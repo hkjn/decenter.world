@@ -13,14 +13,14 @@ lower-case <strong>bitcoin</strong>. There's only ever going to be
 value their properties. Bitcoin represents a new kind of system, and might
 come to have rather wide-ranging impact on the world.
 
-Although it is the beliefs of people that gives bitcoin value, and
-the system exists to solve problems that people have, since the
-actual running system fundamentally is made of software, it is important
-to understand what it actually <strong>is</strong> in order to understand
-why we find it so interesting, and in order to make good decisions about
-it. I will try to avoid making the explanation too complex,
-but it is necessary to understand a little bit about some concepts like
-public key cryptography and hashing.
+Although Bitcoin exists to solve problems for people, and it is the
+beliefs of people that gives bitcoin value, it is still fundamentally
+a system of software. Given this, it is important
+to understand what Bitcoin actually <strong>is</strong> in order to understand
+why many of us find it so interesting, and to be able to make good decisions
+about how to interact with it or how to modify it. I will try to avoid making
+the explanation more complex than necessary,
+but it will help to understand some concepts like public key cryptography and hashing.
 
 The Bitcoin software is a program written in the C++ programming
 language, which if you run it makes your computer a Bitcoin node.
