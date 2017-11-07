@@ -4,32 +4,30 @@ On 2008-11-01, an email was sent by Satoshi Nakamoto introducing
 Bitcoin: A Peer-to-Peer Electronic Cash System [1]. This was followed
 on 2009-01-08 by the release of the Bitcoin v0.1 software [2]. When
 this software is active, the computer running it becomes a
-<strong>Bitcoin node</strong>.
-Such nodes join other nodes and form the Bitcoin network, which has
-its own native currency called the lower-case <strong>bitcoin</strong>.
-There's only ever going to be 21 million bitcoin, which have value
-because people believe that they have value. Bitcoin represents a new
-kind of system, and might come to have rather wide-ranging impact on
-the world.
+<strong>Bitcoin node</strong>. Such nodes join other nodes and form
+the Bitcoin network, which has its own native currency called the
+lower-case <strong>bitcoin</strong>. There's only ever going to be
+21 million bitcoin, which have value because people believe that
+they have value. Bitcoin represents a new kind of system, and might
+come to have rather wide-ranging impact on the world.
 
-Although it is the beliefs of people that gives bitcoins value, and
+Although it is the beliefs of people that gives bitcoin value, and
 the system exists to solve problems that people have, since the
 actual running system fundamentally is made of software, it is important
 to understand what it actually <strong>is</strong> in order to understand
 why some of us find it so interesting, and in order to make good
-decisions about it.
-
-So in this article, I will describe the Bitcoin system from a software
-perspective. I will try to avoid making the explanation too complex,
+decisions about it. I will try to avoid making the explanation too complex,
 but it is necessary to understand a little bit about some concepts like
 public key cryptography and hashing.
 
 The Bitcoin software is a program written in the C++ programming
-language, which when running turns the computer it's running on
-into a Bitcoin node. In the months and years after Satoshi's
-initial emails, more and more people started developing that software,
-and even later people started exchanging bitcoin for traditional currency
-like US dollars and Euros.
+language. Running this software makes the computer it's running on
+a Bitcoin node. In the months and years after Satoshi's initial emails,
+more and more people started developing that software and running nodes,
+and later on people started exchanging bitcoin for traditional currency
+like US dollars and Euros. A price really is only an abstraction for
+something having value. Just like US dollars, bitcoin the currency is
+not itself pretty and can't be eaten, but can be exchanged for art or bread.
 
 Each Bitcoin node connects to other nodes, and sends messages to those
 nodes to find other nodes it doesn't yet know about. The software uses
