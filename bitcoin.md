@@ -71,13 +71,12 @@ way Bitcoin works is that each transaction arrives at a specific point
 in time, and by following the flow of transactions, we end up with
 a view of who owns what coins. The way we know that a public address
 owns a coin is that it has outputs which no subsequent transaction
-spend as inputs.
+spends as inputs.
 
 Bitcoin outputs are indivisible, just like physical dollar or Euro bills,
 so if we want to spend less than the entire output we need to get some change
 back to one of our own addresses.
 
-todo: utxos are indivisible
 ```
 [ placeholder: diagram of alice -> bob transaction in two blocks and
   corresponding ledger with utxos goes here ]
@@ -85,11 +84,11 @@ todo: utxos are indivisible
 
 Only transactions signed by a specific private key corresponding
 to the transaction output are seen by the software as valid.
-he software also adds up all unspent outputs
-or **UTXOs**, which displays the balance controlled by the
-node's private keys in BTC. There's no central authority to say what's
-valid or not, but each node independently checks the transactions it
-receives and only accepts the ones it deems to be valid.
+The Bitcoin software add up all unspent outputs or **UTXOs**, which
+displays the balance controlled by the node's private keys in BTC.
+There's no central authority to say what's valid or not, but each
+node independently checks the transactions it receives and only
+accepts the ones it deems to be valid.
 
 We can now understand what actually is going on when we "have 0.25 BTC".
 That's the case where we control private keys which control unspent
@@ -173,3 +172,7 @@ private keys. There are many kinds of things we might want from digital
 money where the Bitcoin blockchain itself is not directly suitable for
 these reasons, so we need to keep building more systems to solve those
 problems.
+
+```
+todo: describe spv nodes / light wallets
+```
