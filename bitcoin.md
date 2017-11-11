@@ -55,16 +55,29 @@ to a new address. These signatures can be validated by anyone that has
 the corresponding public key, so each node can check that the holder
 of the private key was the one that originated the transaction.
 
+The Bitcoin wallets that are commonly used are just a useful way to keep track
+of a collection of private keys, as well as the bitcoin controlled by
+those keys. By handling the details of managing private keys, summing
+up the bitcoin controlled by those keys, and signing transactions, the
+barrier to entry is lowered compared to if users needed to understand
+these concepts themselves.
+
 ## Transactions
 
 Each transaction has inputs and outputs, or debits and credits. There's
 actually no coins and no balances in the protocol, but we can
-still think of "having 0.25 BTC" in the case where we control private
-keys which control unspent transaction outputs that sum up to that
-amount. When we go through all transactions in the history of Bitcoin,
-if we find some transaction outputs with no subsequent transactions
-using them as inputs, they are available for spending.
+still think of "having 0.25 BTC" as a useful simplification. The
+way Bitcoin works is that each transaction arrives at a specific point
+in time, and by following the flow of transactions, we end up with
+a view of who owns what coins. The way we know that a public address
+owns a coin is that it has outputs which no subsequent transaction
+spend as inputs.
 
+Bitcoin outputs are indivisible, just like physical dollar or Euro bills,
+so if we want to spend less than the entire output we need to get some change
+back to one of our own addresses.
+
+todo: utxos are indivisible
 ```
 [ placeholder: diagram of alice -> bob transaction in two blocks and
   corresponding ledger with utxos goes here ]
@@ -77,6 +90,13 @@ or **UTXOs**, which displays the balance controlled by the
 node's private keys in BTC. There's no central authority to say what's
 valid or not, but each node independently checks the transactions it
 receives and only accepts the ones it deems to be valid.
+
+We can now understand what actually is going on when we "have 0.25 BTC".
+That's the case where we control private keys which control unspent
+transaction outputs that sum up to that amount. When we go through all
+transactions in the history of Bitcoin, if we find some transaction
+outputs with no subsequent transactions using them as inputs, they
+are available for spending.
 
 ## Mining
 
