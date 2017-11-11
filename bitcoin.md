@@ -204,12 +204,12 @@ raises the barrier to entry.
 
 Popular mobile wallets for Bitcoin like Copay, Mycelium
 and Samourai, are using a simplified verification protocol
-called SPV. This protocol involves retrieving just the block
-**headers**, since mobile clients don't have enough storage
-space or network bandwidth to retrieve the full blocks.
-This means that the security properties of these lightweight
-clients is less good than the full nodes, since they don't
-verify all the rules.
+called SPV. This protocol involves retrieving just the
+block **headers**, since mobile clients don't have enough
+storage space or network bandwidth to retrieve the full
+blocks. This means that the security properties of these
+lightweight clients is less good than the full nodes,
+since they don't verify all the rules.
 
 There are many kinds of things we might want from digital
 money where the Bitcoin blockchain itself is not directly
