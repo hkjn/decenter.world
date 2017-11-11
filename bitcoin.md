@@ -1,23 +1,24 @@
 # Bitcoin
 
 About nine years ago, somebody calling themselves
-<strong>Satoshi</strong> sent an email introducing
+*Satoshi* sent an email introducing
 the first version of the
-<a href="http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html">Bitcoin software</a>.
+[Bitcoin software](http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html).
 When this software is active, the computer running it
-becomes a <strong>Bitcoin node</strong>. Such nodes link up with
-each other to form the <strong>Bitcoin network</strong>. The Bitcoin
-network, which has its own native currency called the
-lower-case <strong>bitcoin</strong>. There's only ever going to be
+becomes a *Bitcoin node*. Such nodes link up with
+each other to form the *Bitcoin network*. The Bitcoin
+network has its own native currency called the
+lower-case *bitcoin*. There's only ever going to be
 21 million bitcoin, which have started to acquire value, because people
-value their properties. Bitcoin represents a new kind of system, and might
-come to have rather wide-ranging impact on the world.
+value the properties that the currency has. Bitcoin represents a new
+kind of system, and might come to have rather wide-ranging impact on
+the world.
 
 Although Bitcoin exists to solve problems for people, and it is the
 beliefs of people that gives bitcoin value, it is still fundamentally
 a system of software. This article will for this reason try to explain
-what the Bitcoin software actually <strong>is</strong>, why many of us
-find it so interesting, and to help make good
+what the Bitcoin software actually *is*, which will help understand why
+many of us find it so interesting, and make it easier to make good
 decisions about how to interact with or attempt to modify Bitcoin.
 I will try to avoid making the explanation more complex than necessary,
 but I will need to introduce some concepts like public key cryptography
@@ -27,21 +28,21 @@ and hashing.
 
 The Bitcoin software is a program written in the C++ programming
 language, which if you run it makes your computer a Bitcoin
-<strong>node</strong>. In the months and years after Satoshi's
-initial emails, more and more people started developing that
-software and running nodes, and later on people started exchanging
-bitcoin for traditional currency like US dollars and Euros and
-selling goods and services for bitcoin. A dollar bill
-can't be eaten and isn't particularly pretty, but it can be exchanged
-for bread or a ticket to an art gallery because other people believe
-it has value. The bitcoin currency, which is listed as BTC, is just the same.
-A price really is only an abstracted way of describing the value of something.
+*node*. In the months and years after Satoshi's initial emails,
+more and more people started developing that software and running
+nodes, and later on people started exchanging bitcoin for traditional
+currency like US dollars and Euros and selling goods and services for
+bitcoin. A dollar bill can't be eaten and isn't particularly pretty,
+but it can be exchanged for bread or a ticket to an art gallery because
+other people believe it has value. The bitcoin currency, which is
+listed on exchanges as BTC, is just the same. A price really is only an
+abstracted way of describing the value of something.
 
 ## Bitcoin nodes
 
 Each Bitcoin node connects to other nodes, and sends messages to those
 nodes to find other nodes it doesn't yet know about. The way those nodes
-talk to each other describes the <strong>Bitcoin protocol</strong>.
+talk to each other describes the *Bitcoin protocol*.
 
 ## Public key cryptography
 
@@ -49,11 +50,10 @@ The Bitcoin software uses public key cryptography to generate pairs of
 public and private keys. In Bitcoin, the addresses used to receive
 transactions are derived from public keys, while the private keys stay
 secret and never should be revealed to anyone. The private keys can be
-used to <strong>sign transactions</strong>, which allows the bitcoin
-to the transferred control of a new address. These signatures can be
-validated by anyone that has the corresponding public key, so each node
-can check that the holder of the private key was the one that
-originated the transaction.
+used to *sign transactions*, which allows the bitcoin to be transferred
+to a new address. These signatures can be validated by anyone that has
+the corresponding public key, so each node can check that the holder
+of the private key was the one that originated the transaction.
 
 ## Transactions
 
@@ -64,7 +64,7 @@ keys which control unspent transaction outputs that sum up to that
 amount. Only transactions signed by a specific private key corresponding
 to the transaction output are seen by the software as valid.
 he software also adds up all unspent outputs
-or <strong>UTXOs</strong>, which displays the balance controlled by the
+or *UTXOs*, which displays the balance controlled by the
 node's private keys in BTC. There's no central authority to say what's
 valid or not, but each node independently checks the transactions it
 receives and only accepts the ones it deems to be valid.
@@ -72,17 +72,17 @@ receives and only accepts the ones it deems to be valid.
 ## Mining
 
 New bitcoin are generated by certain full nodes on the network,
-called <strong>miners</strong>. The miners produce new bitcoin by solving a
+called *miners*. The miners produce new bitcoin by solving a
 specific mathematical puzzle, which if solved produces some newly issued
-bitcoin, as a reward from the network called <strong>coinbase</strong>.
+bitcoin, as a reward from the network called *coinbase*.
 The coinbase reward started out at 50 BTC per block, and every
 210,000 blocks or 4 years it is reduced by half.
 This ensures that the rate at which new bitcoin is issued is predictable and
 ends up with 21 million bitcoin in total by 2140.
 
 The puzzle that miners solve involves finding inputs to the SHA256
-<strong>hash function</strong> that are lower than a specific target value,
-called the <strong>difficulty</strong>. Hash functions
+*hash function* that are lower than a specific target value,
+called the *difficulty*. Hash functions
 are by their nature one-way, so there's no way to predict which input values
 will result in a desired output, and miners just try different input values
 until they find one lower than the difficulty by chance. Solving this puzzle
