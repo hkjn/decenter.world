@@ -105,6 +105,13 @@ dollar or Euro bills, so if we want to spend less than
 the entire output we need to get some change back to one
 of our own addresses.
 
+In the image below, the users Alice and Bob's wallets
+are shown. As a reminder, a wallet is a collection of
+private keys, from which the corresponding public key
+and address can be calculated.
+
+![Image of Alice and Bob's wallet](wallets.png)
+
 If Alice sends 0.25 BTC to Bob, what's going on is that
 Alice has some unspent transaction outputs summing to
 at least 0.25 BTC, which she uses to create a new
