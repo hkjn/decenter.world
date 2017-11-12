@@ -59,9 +59,9 @@ secret and never should be revealed to anyone. The
 private keys can be used to **sign transactions**, which
 allows the bitcoin to be transferred to a new address.
 These signatures can be validated by anyone that has
-the corresponding public key, so each node can check that
-the holder of the private key was the one that originated
-the transaction.
+the corresponding public key / address, so each node can
+check that the holder of the private key was the one that
+originated the transaction.
 
 The Bitcoin wallets that are commonly used are just a
 useful way to keep track of a collection of private keys,
