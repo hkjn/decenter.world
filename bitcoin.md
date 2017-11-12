@@ -66,7 +66,7 @@ originated the transaction.
 
 **Bitcoin wallets** are just software that helps us
 keep track of a collection of private keys,
-as well as the how many bitcoin are controlled by those
+as well as how many bitcoin are controlled by those
 keys. The wallets normally use a new address every time
 we receive bitcoin, which helps with privacy. By
 handling the details of managing private keys, summing
