@@ -31,7 +31,7 @@ and hashing.
 
 The Bitcoin software is a program written in the C++
 programming language, which if you run it makes your
-computer a Bitcoin **node**. In the months and years
+computer a **Bitcoin node**. In the months and years
 after Satoshi's initial emails, more and more people
 started developing that software and running nodes, and
 later on people started exchanging bitcoin for traditional
@@ -43,8 +43,6 @@ believe it has value. The bitcoin currency, which is
 listed on exchanges as BTC, is just the same. A price
 really is only an abstracted way of describing the value
 of something.
-
-## Bitcoin nodes
 
 Each Bitcoin node connects to other nodes, and sends
 messages to those nodes to find other nodes it doesn't
