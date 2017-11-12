@@ -76,8 +76,8 @@ these concepts ourselves.
 We can visualize a user Alice's wallet as a bag of
 private keys, some of which might be used to unlock
 lockboxes holding her bitcoin. In the image below,
-the `k1` key can be used to unlock a lockbox holding
-0.5 BTC.
+the `k1` key can be used to unlock a lockbox, or
+**lock script**, holding 0.5 BTC.
 
 ![Image of Alice's wallet](alicewallet.png)
 
@@ -93,7 +93,6 @@ transactions, we end up with a view of who owns what
 coins. In the image below, Alice's address starting with
 `1aB...` has 0.5 BTC in a single unspent output, while the
 other two addresses don't have any unspent outputs.
-
 
 ![Image of ledger](ledger.png)
 
@@ -130,7 +129,12 @@ the entire 0.5 BTC input, she creates two outputs; one
 locked by Bob's private key `k4`, and one locked by her
 own private key `k2`. This effectively sends back 0.25
 BTC to herself in a **change address**, along with
-actually sending 0.25 BTC to Bob. 
+actually sending 0.25 BTC to Bob. The user experience is
+simpler than what we've described here: Alice
+just selects Bob's address `1BE...`  as a recipient,
+enters the amount and sends the transaction, without
+needing to worry about change addresses, UTXOs or
+locking scripts.
 
 ![Image of transaction from Alice to Bob](transaction.png)
 
