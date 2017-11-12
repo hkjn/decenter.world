@@ -95,7 +95,7 @@ of our own addresses.
 ```
 [ placeholder: diagram of alice -> bob transaction in two
   blocks and corresponding ledger with utxos goes here ]
-
+```
 
 Only transactions signed by a specific private key
 corresponding to the transaction output are seen by the
