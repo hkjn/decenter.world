@@ -63,14 +63,17 @@ the corresponding public key / address, so each node can
 check that the holder of the private key was the one that
 originated the transaction.
 
-The Bitcoin wallets that are commonly used are just a
-useful way to keep track of a collection of private keys,
-as well as the bitcoin controlled by those keys. By
+
+**Bitcoin wallets** are just software that helps us
+keep track of a collection of private keys,
+as well as the how many bitcoin are controlled by those
+keys. The wallets normally use a new address every time
+we receive bitcoin, which helps with privacy. By
 handling the details of managing private keys, summing
 up the bitcoin controlled by those keys, and signing
-transactions, the barrier to entry is lowered compared
-to if users needed to understand these concepts
-themselves.
+transactions, the barrier to entry is lowered by
+using wallets compared to if we needed to understand
+these concepts ourselves.
 
 ## Transactions
 
