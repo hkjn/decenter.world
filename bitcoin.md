@@ -34,15 +34,15 @@ programming language, which if you run it makes your
 computer a **Bitcoin node**. In the months and years
 after Satoshi's initial emails, more and more people
 started developing that software and running nodes, and
-later on people started exchanging bitcoin for traditional
-currency like US dollars and Euros and selling goods and
-services for bitcoin. A dollar bill can't be eaten and
-isn't particularly pretty, but it can be exchanged for
-bread or a ticket to an art gallery because other people
-believe it has value. The bitcoin currency, which is
-listed on exchanges as BTC, is just the same. A price
-really is only an abstracted way of describing the value
-of something.
+more recently people started exchanging bitcoin for
+traditional currency like US dollars and Euros and
+selling goods and services for bitcoin. A dollar bill
+can't be eaten and isn't particularly pretty, but it can
+be exchanged for bread or a ticket to an art gallery
+because other people believe it has value. The bitcoin
+currency, which is listed on exchanges as BTC, is just
+the same. A price really is only an abstracted way of
+describing the value of something.
 
 Each Bitcoin node connects to other nodes, and sends
 messages to those nodes to find other nodes it doesn't
