@@ -131,7 +131,7 @@ own private key `k2`. This effectively sends back 0.25
 BTC to herself in a **change address**, along with
 actually sending 0.25 BTC to Bob. The user experience is
 simpler than what we've described here: Alice
-just selects Bob's address `1BE...`  as a recipient,
+just selects Bob's address `1bE...`  as a recipient,
 enters the amount and sends the transaction, without
 needing to worry about change addresses, UTXOs or
 locking scripts.
