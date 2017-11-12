@@ -1,18 +1,17 @@
 # Bitcoin
 
 About nine years ago, somebody calling themselves
-**Satoshi** sent an email introducing
-the first version of the
-[Bitcoin software](http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html).
+**Satoshi** sent [an email](http://www.metzdowd.com/pipermail/cryptography/2009-January/014994.html)
+introducing the first version of the Bitcoin software.
 When this software is active, the computer running it
 becomes a **Bitcoin node**. Such nodes link up with
 each other to form the **Bitcoin network**. The Bitcoin
 network has its own native currency called the
 lower-case **bitcoin**. There's only ever going to be
 21 million bitcoin, which have started to acquire value,
-because people value the properties that the currency has.
-Bitcoin represents a new kind of system, and might come to
-have rather wide-ranging impact on the world.
+because people find the properties that the currency has
+useful. Bitcoin represents a new kind of system, and might
+come to have rather wide-ranging impact on the world.
 
 Although Bitcoin exists to solve problems for people, and
 it is the beliefs of people that gives bitcoin value, it
@@ -25,6 +24,8 @@ to modify Bitcoin. I will try to avoid making the
 explanation more complex than necessary, but I will need
 to introduce some concepts like public key cryptography
 and hashing.
+
+* todo: mention lineage of satoshi client -> bitcoin core *
 
 ## Bitcoin software
 
