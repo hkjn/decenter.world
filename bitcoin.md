@@ -94,6 +94,7 @@ coins. In the image below, the address starting with
 `1aB...` has 0.5 BTC as unspent outputs, while the
 other two addresses don't have any unspent outputs.
 
+
 ![Image of ledger](ledger.png)
 
 The way we know that a public address owns a
@@ -117,11 +118,27 @@ Alice has some unspent transaction outputs summing to
 at least 0.25 BTC, which she uses to create a new
 transaction with those outputs as inputs, requiring
 Bob's signature to spend the new output in the future.
+The image below shows how the new transaction in blue
+is created. Alice starts by asking Bob for an address
+where he'd like to receive the bitcoin. She then uses
+the 0.5 BTC unspent output that she had before as an
+*input* to the new transaction. Since she has to spend
+the entire 0.5 BTC input, she creates two outputs; one
+locked by Bob's private key `k4`, and one locked by her
+own private key `k2`. This effectively sends back 0.25
+BTC to herself in a **change address**, along with
+actually sending the 0.25 BTC she wanted to send to Bob. 
 
-Only transactions signed by a specific private key
-corresponding to the transaction output are seen by the
-software as valid. The Bitcoin software add up all
-unspent outputs or **UTXOs**, which displays the balance
+![Image of transaction from Alice to Bob](transaction.png)
+
+In the typical case, only transactions signed by a
+specific private key corresponding to the transaction
+output are seen by the software as valid. In the example
+above, Alice signed the new transaction with her key `k1`
+in order to unlock the 0.5 BTC output for spending.
+
+The Bitcoin software adds up all unspent outputs or
+**UTXOs**, which displays the balance
 controlled by the node's private keys in BTC. There's no
 central authority to say what's valid or not, but each
 node independently checks the transactions it receives
