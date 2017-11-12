@@ -92,10 +92,14 @@ Bitcoin outputs are indivisible, just like physical
 dollar or Euro bills, so if we want to spend less than
 the entire output we need to get some change back to one
 of our own addresses.
-```
-[ placeholder: diagram of alice -> bob transaction in two
-  blocks and corresponding ledger with utxos goes here ]
-```
+
+If Alice sends 0.25 BTC to Bob, what's going on is that
+Alice has some unspent transaction outputs summing to
+at least 0.25 BTC, which she uses to create a new
+transaction with those outputs as inputs, requiring
+Bob's signature to spend the new output in the future.
+
+![Image of Alice's wallet](alicewallet.png)
 
 Only transactions signed by a specific private key
 corresponding to the transaction output are seen by the
