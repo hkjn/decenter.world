@@ -57,12 +57,10 @@ In Bitcoin, the addresses used to receive transactions
 are derived from public keys, while the private keys stay
 secret and never should be revealed to anyone. The
 private keys can be used to **sign transactions**, which
-allows the bitcoin to be transferred to a new address.
-These signatures can be validated by anyone that has
-the corresponding public key / address, so each node can
-check that the holder of the private key was the one that
-originated the transaction.
-
+typically is what allows the bitcoin to be transferred to
+a new address. These signatures can be validated by
+anyone that has the corresponding public key, so each node can check that the holder of the private key
+was the one that originated the transaction.
 
 **Bitcoin wallets** are just software that helps us
 keep track of a collection of private keys,
@@ -74,6 +72,14 @@ up the bitcoin controlled by those keys, and signing
 transactions, the barrier to entry is lowered by
 using wallets compared to if we needed to understand
 these concepts ourselves.
+
+We can visualize a user Alice's wallet as a bag of
+private keys, some of which might be used to unlock
+lockboxes holding her bitcoin. In the image below,
+the `k1` key can be used to unlock a lockbox holding
+0.5 BTC.
+
+![Image of Alice's wallet](alicewallet.png)
 
 ## Transactions
 
@@ -98,8 +104,6 @@ Alice has some unspent transaction outputs summing to
 at least 0.25 BTC, which she uses to create a new
 transaction with those outputs as inputs, requiring
 Bob's signature to spend the new output in the future.
-
-![Image of Alice's wallet](alicewallet.png)
 
 Only transactions signed by a specific private key
 corresponding to the transaction output are seen by the
