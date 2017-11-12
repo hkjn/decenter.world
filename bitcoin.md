@@ -77,25 +77,24 @@ these concepts ourselves.
 
 ## Transactions
 
-Each transaction has inputs and outputs, or debits and
-credits. There's actually no coins and no balances in the
-protocol, but we can still think of "having 0.25 BTC" as
-a useful simplification. The way Bitcoin works is that
-each transaction arrives at a specific point in time, and
-by following the flow of transactions, we end up with
-a view of who owns what coins. The way we know that a
-public address owns a coin is that it has outputs which
-no subsequent transaction spends as inputs.
+Each transaction has **inputs** and **outputs**, or
+debits and credits. There's actually no coins and no
+balances in the protocol, but we can still think of 
+"having 0.25 BTC" as a useful simplification. The way
+Bitcoin works is that each transaction arrives at a
+specific point in time, and by following the flow of
+transactions, we end up with a view of who owns what
+coins. The way we know that a public address owns a
+coin is that it has outputs which no subsequent
+transaction spends as inputs.
 
 Bitcoin outputs are indivisible, just like physical
 dollar or Euro bills, so if we want to spend less than
 the entire output we need to get some change back to one
 of our own addresses.
-
 ```
 [ placeholder: diagram of alice -> bob transaction in two
   blocks and corresponding ledger with utxos goes here ]
-```
 
 Only transactions signed by a specific private key
 corresponding to the transaction output are seen by the
