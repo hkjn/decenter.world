@@ -52,16 +52,16 @@ describes the **Bitcoin protocol**.
 ## Public key cryptography
 
 The Bitcoin software uses public key cryptography to
-generate pairs of public and private keys. In Bitcoin,
-the addresses used to receive transactions are derived
-from public keys, while the private keys stay secret and
-never should be revealed to anyone. The private keys can
-be used to **sign transactions**, which allows the
-bitcoin to be transferred to a new address. These
-signatures can be validated by anyone that has the
-corresponding public key, so each node can check that the
-holder of the private key was the one that originated the
-transaction.
+generate pairs of **public** and **private** keys.
+In Bitcoin, the addresses used to receive transactions
+are derived from public keys, while the private keys stay
+secret and never should be revealed to anyone. The
+private keys can be used to **sign transactions**, which
+allows the bitcoin to be transferred to a new address.
+These signatures can be validated by anyone that has
+the corresponding public key, so each node can check that
+the holder of the private key was the one that originated
+the transaction.
 
 The Bitcoin wallets that are commonly used are just a
 useful way to keep track of a collection of private keys,
