@@ -90,8 +90,8 @@ balances in the protocol, but we can still think of
 Bitcoin works is that each transaction arrives at a
 specific point in time, and by following the flow of
 transactions, we end up with a view of who owns what
-coins. In the image below, the address starting with
-`1aB...` has 0.5 BTC as unspent outputs, while the
+coins. In the image below, Alice's address starting with
+`1aB...` has 0.5 BTC in a single unspent output, while the
 other two addresses don't have any unspent outputs.
 
 
