@@ -295,12 +295,10 @@ higher fees first. This allows people to decide
 themselves how important their transactions are to them
 based on the current prices, but does mean that as the
 interest and usage of Bitcoin is going up, fees also would
-be expected to rise.
-
-There are so-called **second-layer solutions** being built
-to address both these problems like the [Lightning
-Network](http://lightning.network/), but they are not yet
-ready for the live Bitcoin network.
+be expected to rise. There are so-called **second-layer
+solutions** being built to address both these problems
+like the [Lightning Network](http://lightning.network/),
+but they are not yet deployed to the live Bitcoin network.
 
 Another limitation is that in order to really be certain
 that we are in control of our bitcoin, we would all need
