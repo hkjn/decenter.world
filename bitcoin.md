@@ -25,9 +25,9 @@ explanation more complex than necessary, but I will need
 to introduce some concepts like public key cryptography
 and hashing.
 
-* todo: mention lineage of satoshi client -> bitcoin core *
-
 ## Bitcoin software
+
+* todo: mention lineage of satoshi client -> bitcoin core *
 
 The Bitcoin software is a program written in the C++
 programming language, which if you run it makes your
@@ -47,7 +47,9 @@ describing the value of something.
 Each Bitcoin node connects to other nodes, and sends
 messages to those nodes to find other nodes it doesn't
 yet know about. The way those nodes talk to each other
-describes the **Bitcoin protocol**.
+describes the **Bitcoin protocol**. Each Bitcoin node
+that has seen and verified all of the transactions in
+the history of Bitcoin is called a **full node**.
 
 ## Public key cryptography
 
