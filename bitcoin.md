@@ -214,10 +214,10 @@ The task of ordering pending transactions into blocks is
 itself not a difficult computational task, but by attaching
 a Proof of Work to each block, the miners show that they
 spent at least a certain amount of energy mining that
-block. This means that an attacker that wanted to rewrite
-the Bitcoin network and write an alternate history of
-transactions would need to overpower a majority of the
-miners. For example, maybe an attacker wanted to sell
+block. This means that an attacker that wanted to write
+an alternate history of transactions would need to
+overpower a majority of the miners. For example, maybe
+an attacker wanted to sell
 their bitcoin to someone, then rewrite history so they
 still kept their bitcoin and could spend them again. The
 nature of the Proof of Work-backed system means that to
