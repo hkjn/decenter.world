@@ -254,14 +254,13 @@ The 10 minute rate of block production gives plenty of
 time for the entire network to hear about the latest
 blocks, which is important for miners so they don't waste
 effort trying to mine blocks on the wrong branch of the
-chain.
-
-Since every node has a copy of the entire blockchain, and
-every transaction is stored on the blockchain forever, it
-is important to not use that limited space frivolously.
-Every transaction has inputs and outputs, and by making
-the sum of the outputs slightly less than the sum of the
-inputs, we can implicitly leave a transaction fee for the
+chain. Since every node has a copy of the entire
+blockchain, and every transaction is stored on the
+blockchain forever, it is important to not use that
+limited space frivolously. Every transaction has inputs
+and outputs, and by making the sum of the outputs
+slightly less than the sum of the inputs, we can
+implicitly leave a transaction fee for the
 miners.
 
 The miners who follow the correct rules will receive the
