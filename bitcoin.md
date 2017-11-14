@@ -236,9 +236,9 @@ Bitcoin software. The difficulty value for the puzzle is
 adjusted by the Bitcoin software every 2016 blocks, and
 targets a rate of block production of one block every 10
 minutes. Since the puzzle involves finding an input to a
-hash function, the blocks are produced every 10 minute on
-average only, and can arrive faster or slower than that
-as well.
+hash function, the blocks are produced every 10 minutes
+_on average_, the actual time of arrival of blocks can be
+faster or slower than that in practice.
 
 This means that every Bitcoin node starting up for the
 first time can start talking to other nodes around it,
@@ -273,14 +273,16 @@ people value enough to pay sufficient mining fees getmined.
 
 ## Limitations
 
-This system can at most fit a handful of transactions
-every second, and the average 10 minute block production
-means that the time to wait until our transaction is mined
-into a block is fairly long, as well as unpredictable. In
-order to really be certain that we are in control of our
-bitcoin, we would need to run our own full nodes, and be
-very good at protecting our private keys, both of which
-raises the barrier to entry.
+The Bitcoin network on average produces a block every 10
+minutes, which means that at most fit a handful of
+transactions can be sent every second, with very large
+variance and fairly long waits at minimum in how long
+a specific transaction will need to wait before being
+mined.
+And in order to really be certain that we are in control
+of our bitcoin, we would all need to run our own full
+nodes, and be very good at protecting our private keys,
+both of which raises the barrier to entry.
 
 Popular mobile wallets for Bitcoin like Copay, Mycelium
 and Samourai, are using a simplified verification protocol
