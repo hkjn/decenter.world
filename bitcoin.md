@@ -268,7 +268,8 @@ coinbase reward, as well as all transaction fees of the
 transactions in the block they mine. This means that a
 miner likely will include transactions with higher fees
 before those with lower fees, so only the cases which
-people value enough to pay sufficient mining fees getmined.
+people value enough to pay sufficient mining fees get
+mined.
 
 ## Limitations
 
