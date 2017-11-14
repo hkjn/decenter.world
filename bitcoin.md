@@ -275,10 +275,11 @@ mined.
 
 The Bitcoin network on average produces a block every 10
 minutes, which means that at most a handful of
-transactions can be sent every second, with very large
-variance and fairly long waits at minimum in how long
-a specific transaction will need to wait before being
-mined.
+transactions can be sent every second. Each transaction
+can vary a lot in how long it needs to wait, and even
+at the best of times it will take several minutes to
+confirm.
+
 And in order to really be certain that we are in control
 of our bitcoin, we would all need to run our own full
 nodes, and be very good at protecting our private keys,
