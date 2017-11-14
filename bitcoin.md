@@ -274,7 +274,7 @@ mined.
 ## Limitations
 
 The Bitcoin network on average produces a block every 10
-minutes, which means that at most fit a handful of
+minutes, which means that at most a handful of
 transactions can be sent every second, with very large
 variance and fairly long waits at minimum in how long
 a specific transaction will need to wait before being
