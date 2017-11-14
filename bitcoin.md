@@ -178,7 +178,8 @@ recently arrived transactions. There is a specific
 mathematical puzzle that the miners need to solve in
 order to produce a new block. A block is simply a 
 sequence of transactions packaged together, along with
-some extra data like the puzzle. If a miner solves this
+some extra data like the solution to the puzzle in the
+**block header**. If a miner solves this
 puzzle correctly, they can announce their newly found
 block to the network, which will accept it and reward
 the miner with some newly issued bitcoin as a "finder's
@@ -246,9 +247,9 @@ gradually retrieving blocks from the genesis block onward,
 and for each block it can verify that the Proof-of-Work
 is valid, and that all the transactions are valid. If a
 malfunctioning or malicious node feeds our node invalid
-blocks, it will simply be ignored. If there's several
-valid chains available, our node will follow the chain
-that has the most accumulated work behind it.
+blocks, our node will just stop talking to it. If there's
+several valid chains available, our node will follow the
+chain that has the most accumulated work behind it.
 
 The 10 minute rate of block production gives plenty of
 time for the entire network to hear about the latest
@@ -273,28 +274,46 @@ mined.
 
 ## Limitations
 
+The Bitcoin network is the first of a new type of
+technology with some novel interesting properties, but
+it's not going to solve all the problems in the world.
 The Bitcoin network on average produces a block every 10
 minutes, which means that at most a handful of
 transactions can be sent every second. Each transaction
 can vary a lot in how long it needs to wait, and even
 at the best of times it will take several minutes to
-confirm.
+confirm by being mined into a block. This means that
+applications that need fast confirmations are not
+suited for being stored directly on the Bitcoin network.
 
-And in order to really be certain that we are in control
-of our bitcoin, we would all need to run our own full
-nodes, and be very good at protecting our private keys,
-both of which raises the barrier to entry.
+Due to the fact that every node has a copy of the entire
+blockchain, which stores every transaction forever, the
+total space available in the Bitcoin blocks is quite
+limited. The way the limited space is assigned is through
+fees, which makes miners select the transactions with
+higher fees first. This allows people to decide
+themselves how important their transactions are to them
+based on the current prices, but does mean that as the
+interest and usage of Bitcoin is going up, fees also would
+be expected to rise.
+
+There are so-called **second-layer solutions** being built
+to address both these problems like the [Lightning
+Network](http://lightning.network/), but they are not yet
+ready for the live Bitcoin network.
+
+Another limitation is that in order to really be certain
+that we are in control of our bitcoin, we would all need
+to run our own full nodes, and be very good at protecting
+our private keys, both of which raises the barrier to
+entry.
 
 Popular mobile wallets for Bitcoin like Copay, Mycelium
-and Samourai, are using a simplified verification protocol
-called SPV. This protocol involves retrieving just the
-block **headers**, since mobile clients don't have enough
-storage space or network bandwidth to retrieve the full
-blocks. This means that the security properties of these
-lightweight clients is less good than the full nodes,
-since they don't verify all the rules.
-
-There are many kinds of things we might want from digital
-money where the Bitcoin blockchain itself is not directly
-suitable for these reasons, so we need to keep building
-more systems to solve those problems.
+and Samourai, are using a simplified verification protocol,
+making them **SPV clients**. This protocol involves
+retrieving just the block headers, since mobile
+clients don't have enough storage space or network
+bandwidth to retrieve the full blocks. This means that
+the security properties of these lightweight clients is
+less good than the full nodes, since they can't verify
+all the rules.
