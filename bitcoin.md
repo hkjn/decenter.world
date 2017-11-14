@@ -189,18 +189,8 @@ This ensures that the rate at which new bitcoin is issued
 is predictable and ends up with 21 million bitcoin in
 total by 2140.
 
-The correct solution to the puzzle is a hash value, which
-becomes part of a block. The puzzle is set
-up in such a way that the hash value that the miners find
-also validates that all transactions are part of the
-block, using a Merkle hash. This is a type of hash which
-makes it easy to check whether a specific transaction was
-part of that block or not.
-
-*todo: word the above more clearly, maybe more detail*
-
 The puzzle that miners solve involves finding inputs to
-the SHA256 **hash function** that are lower than a
+a **hash function** that are lower than a
 specific target value, called the **difficulty**. Hash
 functions are by their nature one-way, so there's no way
 to predict which input values will result in a desired
@@ -209,6 +199,16 @@ they find one lower than the difficulty by chance. Solving
 this puzzle proves that the miner spent a certain amount
 of work trying random input values to the hash function,
 so it is called a **Proof of Work**.
+
+The correct solution to the puzzle is a hash value, which
+becomes part of the block. The puzzle is set
+up in such a way that the hash value that the miners find
+also validates that all transactions are part of the
+block, using a Merkle hash. This is a type of hash which
+makes it easy to check whether a specific transaction was
+part of that block or not.
+
+*todo: word the above more clearly, maybe more detail*
 
 The task of ordering pending transactions into blocks is
 itself not a difficult computational task, but by attaching
