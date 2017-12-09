@@ -16,3 +16,8 @@ Idea: Have set of "levels of knowledge", where concepts from basic to
 advanced are taught interactively, and 100% understanding is verified
 Khan Academy-style and issued as vanity icon like "level 3 Bitcoin user",
 maybe written to blockchain.
+
+## Push system
+
+- Configurable push-based monitoring system for bitcoin block chain, similar to:
+  - https://blog.decentraland.org/making-ethereum-more-usable-ethalarm-233660030d30
