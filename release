@@ -26,7 +26,7 @@ preflight_checks() {
 
 build_binaries() {
   info "Building binaries.."
-  ./build
+  bash build
 }
 
 create_tag() {
@@ -92,4 +92,5 @@ create_release
 
 upload decenter_world_x86_64 ${URL}
 upload decenter_redirector_x86_64 ${URL}
+upload SHA512SUMS ${URL}
 slacksend "Released \`decenter.world\` v${VERSION}: ${LINK_URL}/${VERSION}."
