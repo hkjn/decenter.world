@@ -1,6 +1,13 @@
 # Sidechains 
 
-Security provided by sidechains is different than security of Bitcoin itself
+Security provided by sidechains is different than security of Bitcoin itself.
+
+## Models
+
+Two different security models:
+- Federated: Group of big companies holds money for sidechain using multisig or similar,
+  control onramp and offramp between Bitcoin and sidechain
+- Merge-mined: Drivechain model, where x% of hashrate decides where money to sidechain goes
 
 ## Security
 
