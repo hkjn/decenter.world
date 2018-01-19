@@ -1,13 +1,25 @@
 # Lightning Network
 
+## Links
+
+- Mainnet LN graph: https://lnmainnet.gaben.win/#
+- Landing site: http://lightning.network/
+- BOLT proposals: https://github.com/lightningnetwork/lightning-rfc/blob/master/00-introduction.md
+- Blockstream's c-lightning implementation in C: https://github.com/ElementsProject/lightning
+- Lightning Labs lnd implementation in Go: https://github.com/lightningnetwork/lnd
+- ACINQ's Eclair implementation in Scala: https://github.com/ACINQ/eclair
+- Blockstream's Lightning Charge wordpress plugin: https://blockstream.com/2018/01/16/lightning-charge.html
+- Zap desktop UI around lnd: https://github.com/LN-Zap/zap-desktop
+- Bitrefill lnd guide: https://blog.bitrefill.com/lightning-payments-on-testnet-for-bitrefill-b3edac845654
+
 In order to maintain the decentralization and security properties of a
 proof-of-work based system, each block must be fast to propagate across
 the network and fast to verify after it is discovered. The target rate of
 block production also needs to be on the order of several minutes in order
 to have good thermodynamic guarantees about how expensive it would be to
 rewrite history and attack the network. This means that blocks need to be
-small and slow, so there's a very limited amount of space that is used to
-propagate transactions to all nodes in the network.
+small and slow, so there's a very limited amount of space available in blocks
+for transactions.
 
 The Lightning Network is one proposal for drastically improving the
 scalability of Bitcoin-based systems, by routing off-chain transactions
