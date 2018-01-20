@@ -11,6 +11,7 @@
 - Blockstream's Lightning Charge wordpress plugin: https://blockstream.com/2018/01/16/lightning-charge.html
 - Zap desktop UI around lnd: https://github.com/LN-Zap/zap-desktop
 - Bitrefill lnd guide: https://blog.bitrefill.com/lightning-payments-on-testnet-for-bitrefill-b3edac845654
+- ACINQ's testnet explorer: https://explorer.acinq.co/#/
 
 In order to maintain the decentralization and security properties of a
 proof-of-work based system, each block must be fast to propagate across
