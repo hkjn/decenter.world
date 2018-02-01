@@ -15,6 +15,7 @@
 - Lightning Labs desktop UI around lnd: https://github.com/lightninglabs/lightning-app
 - Bitrefill lnd testnet guide: https://blog.bitrefill.com/lightning-payments-on-testnet-for-bitrefill-b3edac845654
 - Instructions for using bitcoind as lnd backend: https://github.com/lightningnetwork/lnd/blob/master/docs/INSTALL.md#running-lnd-using-the-bitcoind-backend
+- Minimal desktop LN wallet: https://github.com/minecraft2048/ln-pay
 
 In order to maintain the decentralization and security properties of a
 proof-of-work based system, each block must be fast to propagate across
