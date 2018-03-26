@@ -18,6 +18,7 @@
 - Mainnet yalls.org: https://mainnet.yalls.org
 - Minimal desktop LN wallet: https://github.com/minecraft2048/ln-pay
 - Graph explorer for lnd: https://github.com/altangent/lnd-explorer
+- lightningj, attemp of cross-implementation API: http://www.lightningj.org/
 
 In order to maintain the decentralization and security properties of a
 proof-of-work based system, each block must be fast to propagate across
